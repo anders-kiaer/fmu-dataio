@@ -14,6 +14,9 @@ jobs:
         
       - name: 'Gource Action'
         uses: BoundfoxStudios/action-gource@v2
+        with:
+          gource_title: fmu-dataio
+          avatars_auto_fetch: true
 
       - name: 'Upload gource video'
         uses: actions/upload-artifact@v2
