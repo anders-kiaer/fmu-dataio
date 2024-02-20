@@ -13,11 +13,14 @@ jobs:
           fetch-depth: 0
         
       - name: 'Gource Action'
-        uses: BoundfoxStudios/action-gource@v2
+        uses: anders-kiaer/action-gource@b3249755b14b2599f7f8f197d1a0af9b422416e1
         with:
-          gource_title: fmu-dataio
-          avatars_auto_fetch: true
-
+          gource_title: fmu-drogon
+          gource_seconds_per_day: 0.5
+          gource_start_date: "2023-01-01"
+          gource_stop_date: "2024-02-18"
+          avatars_url: ./avatars
+          
       - name: 'Upload gource video'
         uses: actions/upload-artifact@v2
         with:
