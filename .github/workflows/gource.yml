@@ -19,6 +19,7 @@ jobs:
           gource_start_date: "2023-01-01"
           gource_stop_date: "2024-02-18"
           avatars_url: ./avatars
+          gource_title: ""
           
       - name: 'Upload gource video'
         uses: actions/upload-artifact@v2
