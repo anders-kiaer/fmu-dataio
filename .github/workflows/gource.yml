@@ -15,7 +15,6 @@ jobs:
       - name: 'Gource Action'
         uses: anders-kiaer/action-gource@b3249755b14b2599f7f8f197d1a0af9b422416e1
         with:
-          gource_title: fmu-drogon
           gource_seconds_per_day: 0.5
           gource_start_date: "2023-01-01"
           gource_stop_date: "2024-02-18"
